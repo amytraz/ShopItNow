@@ -1,0 +1,119 @@
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.sidebar h3 {
+    margin-top: 0;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}
+.price-range {
+    display: flex;
+    justify-content: space-between;
+}
+.price-range input {
+    width: 70px;
+}
+.main-content {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.product-card {
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+.product-category {
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.product-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.product-price {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.color-blind-mode nav ul li a {
+    color: #ffffff;
+}
+.color-blind-mode .product-price {
+    color: #005f99;
+}
+.color-blind-mode .promo-card,
+.color-blind-mode .hero,
+.color-blind-mode .promo-banner {
+    background-color: #e6f3ff;
+    border: 1px solid #005f99;
+}
+.color-blind-mode .feature-icon {
+    color: #005f99;
+}
+.color-blind-mode .product-card {
+    border: 1px solid #005f99;
+}
+.color-blind-mode .product-category {
+    color: #005f99;
+}
+.color-blind-mode a {
+    color: #005f99;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        margin-bottom: 1.5rem;
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content > div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

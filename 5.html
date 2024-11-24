@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop. - Your One-Stop Electronic Market</title>
+    <link rel="stylesheet" href="5.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <div class="logo">e-shop.</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Products...">
+                    <button>🔍</button>
+                </div>
+                <div class="user-actions">
+                    <div>🛒 <a href="11.html" id="cartLink">Cart: $0.00</a></div>
+                    <div>👤 <a href="8.php">Admin Account</a></div>
+                    <button id="colorBlindModeToggle">Color Blind Mode</button>
+                    <button id="voiceAssistantToggle" style="margin-left: 15px;">🎙️ Voice Assistant</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="container-1">
+            <h1>e-shop.</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="1.html">All Categories</a></li>
+                <li><a href="3.html">Products</a></li>
+                <li><a href="4.html">LIMITED SALE</a></li>
+                <li><a href="5.html">Best Seller</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="hero promo-banner" style="margin-top: 0px; padding-top: 15px;">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Spring Sale</h1>
+                    <p>Don't miss out on our amazing spring deals!</p>
+                    <a href="3.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="product-grid">
+                <div class="product-card">
+                    <img src="smart-tv.ico" alt="TV">
+                    <div class="product-category">TELEVISION</div>
+                    <div class="product-title">Smart TV QLED 43 inch</div>
+                    <div class="product-price">$4,599.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="drone_2739122.png" alt="Drone">
+                    <div class="product-category">ELECTRONICS</div>
+                    <div class="product-title">Combo Drone 5K</div>
+                    <div class="product-price">$819.00</div>
+                </div>
+                <div class="product-card">
+                    <img src="headphone.png" alt="Speaker">
+                    <div class="product-category">AUDIO</div>
+                    <div class="product-title">Wireless Bluetooth Speaker</div>
+                    <div class="product-price">$1,199.00</div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        window.onload = function() {
+            function speak(text) {
+                if ('speechSynthesis' in window) {
+                    var speech = new SpeechSynthesisUtterance(text);
+                    window.speechSynthesis.speak(speech);
+                } else {
+                    console.log("Text-to-speech not supported by this browser.");
+                }
+            }
+    
+            speak("Spring Sale is here! Don't miss out on our amazing spring deals. Explore our featured products: Smart TV QLED 43 inch for $4,599.00, Combo Drone 5K for $819.00, Wireless Bluetooth Speaker for $1,199.00. Click 'Shop Now' to take advantage of these fantastic offers!");
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

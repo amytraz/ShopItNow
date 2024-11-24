@@ -1,0 +1,78 @@
+main {
+    padding: 20px 0;
+}
+.dashboard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user-details {
+    flex-grow: 1;
+}
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+.recent-orders {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.container-1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.color-blind-mode nav ul li a {
+    color: #ffffff;
+}
+.color-blind-mode .product-price {
+    color: #005f99;
+}
+.color-blind-mode .promo-card,
+.color-blind-mode .hero,
+.color-blind-mode .promo-banner {
+    background-color: #e6f3ff;
+    border: 1px solid #005f99;
+}
+.color-blind-mode .feature-icon {
+    color: #005f99;
+}
+.color-blind-mode .product-card {
+    border: 1px solid #005f99;
+}
+.color-blind-mode .product-category {
+    color: #005f99;
+}
+.color-blind-mode a {
+    color: #005f99;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        overflow-x: auto;
+    }
+    .recent-orders table {
+        font-size: 14px;
+    }
+    .recent-orders th, .recent-orders td {
+        padding: 5px;
+    }
+}

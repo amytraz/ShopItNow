@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop. Products</title>
+    <link rel="stylesheet" href="3.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn{
+            border-color: #ff6b6b;
+            cursor: pointer;
+            margin-top: 7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <div class="logo">e-shop.</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Products...">
+                    <button>🔍</button>
+                </div>
+                <div class="user-actions">
+                    <div>🛒 <a href="11.html" id="cartLink">Cart: $0.00</a></div>
+                    <div>👤 <a href="8.php">Admin Account</a></div>
+                    <button id="colorBlindModeToggle">Color Blind Mode</button>
+                    <button id="voiceAssistantToggle" style="margin-left: 15px;">🎙️ Voice Assistant</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="container-1">
+            <h1>e-shop.</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container-1">
+            <ul>
+                <li><a href="1.html">All Categories</a></li>
+                <li><a href="3.html">Products</a></li>
+                <li><a href="4.html">LIMITED SALE</a></li>
+                <li><a href="5.html">Best Seller</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container content">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><input type="checkbox" class="category-filter" value="Computers & Tablets" id="computer"> Computers & Tablets</li>
+                <li><input type="checkbox" class="category-filter" value="Mobile & Accessories" id="mobile"> Mobile & Accessories</li>
+                <li><input type="checkbox" class="category-filter" value="TV & Home Theater" id="tv"> TV & Home Theater</li>
+            </ul>
+
+            <h3>Brands</h3>
+            <ul>
+                <li><input type="checkbox" class="brand-filter" value="Apple" id="apple"> Apple</li>
+                <li><input type="checkbox" class="brand-filter" value="Samsung" id="samsung"> Samsung</li>
+                <li><input type="checkbox" class="brand-filter" value="ASUS" id="asus"> ASUS</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Products</h2>
+            <div class="product-grid">
+                <!-- Computers & Tablets -->
+                <div class="product-card" data-category="Computers & Tablets" data-brand="Apple" id="101">
+                    <div class="product-title">Apple MacBook Pro 16-inch</div>
+                    <div class="product-price">$2499.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Computers & Tablets" data-brand="Samsung" id="201">
+                    <div class="product-title">Samsung Galaxy Tab S8</div>
+                    <div class="product-price">$749.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Computers & Tablets" data-brand="ASUS" id="301">
+                    <div class="product-title">ASUS ZenBook 14</div>
+                    <div class="product-price">$999.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                
+                <!-- Mobile & Accessories -->
+                <div class="product-card" data-category="Mobile & Accessories" data-brand="Apple" id="401">
+                    <div class="product-title">Apple iPhone 14 Pro</div>
+                    <div class="product-price">$1099.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Mobile & Accessories" data-brand="Samsung" id="501">
+                    <div class="product-title">Samsung Galaxy S23 Ultra</div>
+                    <div class="product-price">$1199.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Mobile & Accessories" data-brand="ASUS" id="601">
+                    <div class="product-title">ASUS ROG Phone 6</div>
+                    <div class="product-price">$899.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                
+                <!-- TV & Home Theater -->
+                <div class="product-card" data-category="TV & Home Theater" data-brand="Apple" id="701">
+                    <div class="product-title">Apple TV 4K (3rd Generation)</div>
+                    <div class="product-price">$179.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="TV & Home Theater" data-brand="Samsung" id="801">
+                    <div class="product-title">Samsung 65" QLED 4K Smart TV</div>
+                    <div class="product-price">$1499.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="TV & Home Theater" data-brand="ASUS" id="901">
+                    <div class="product-title">ASUS ROG Delta S Headset</div>
+                    <div class="product-price">$199.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+        
+                <!-- Additional Products for Balance -->
+                <div class="product-card" data-category="Computers & Tablets" data-brand="Apple" id="1001">
+                    <div class="product-title">Apple iPad Air</div>
+                    <div class="product-price">$599.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Computers & Tablets" data-brand="Samsung" id="1101">
+                    <div class="product-title">Samsung Galaxy Book3</div>
+                    <div class="product-price">$899.00</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Computers & Tablets" data-brand="ASUS" id="1201">
+                    <div class="product-title">ASUS VivoBook 15</div>
+                    <div class="product-price">$499.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="product-card" data-category="Mobile & Accessories" data-brand="Apple" id="1301">
+                    <div class="product-title">Apple AirPods Pro (2nd Generation)</div>
+                    <div class="product-price">$249.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Mobile & Accessories" data-brand="Samsung" id="1401">
+                    <div class="product-title">Samsung Galaxy Buds2 Pro</div>
+                    <div class="product-price">$229.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="Mobile & Accessories" data-brand="ASUS" id="1501">
+                    <div class="product-title">ASUS ZenFone 9</div>
+                    <div class="product-price">$799.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const brandFilters = document.querySelectorAll('.brand-filter');
+        const productCards = document.querySelectorAll('.product-card');
+
+        categoryFilters.forEach(filter => filter.addEventListener('change', filterProducts));
+        brandFilters.forEach(filter => filter.addEventListener('change', filterProducts));
+
+        function filterProducts() {
+            const selectedCategories = Array.from(categoryFilters)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+        
+            const selectedBrands = Array.from(brandFilters)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+        
+            productCards.forEach(card => {
+                const productCategory = card.getAttribute('data-category');
+                const productBrand = card.getAttribute('data-brand');
+        
+                const isCategoryMatched = selectedCategories.length === 0 || selectedCategories.includes(productCategory);
+                const isBrandMatched = selectedBrands.length === 0 || selectedBrands.includes(productBrand);
+        
+                if (isCategoryMatched && isBrandMatched) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+
+        function updateCart(productTitle, productPrice) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || {};
+            if (cart[productTitle]) {
+                cart[productTitle].quantity += 1;
+            } else {
+                cart[productTitle] = {
+                    price: productPrice,
+                    quantity: 1,
+                };
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartLink();
+        }
+
+        function updateCartLink() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || {};
+            let totalAmount = 0;
+            for (const item in cart) {
+                totalAmount += cart[item].price * cart[item].quantity;
+            }
+            document.getElementById('cartLink').innerText = `Cart: $${totalAmount.toFixed(2)}`;
+        }
+
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const card = event.target.closest('.product-card');
+                const productTitle = card.querySelector('.product-title').innerText;
+                const productPrice = parseFloat(card.querySelector('.product-price').innerText.replace('$', ''));
+                updateCart(productTitle, productPrice);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', updateCartLink);
+        speak("Select from Categories: Computers & Tablets, Mobile & Accessories, TV & Home Theater. Choose Brands: Apple, Samsung, ASUS. Here’s a list of available products with their prices. Apple MacBook Pro 16-inch for $2499, Samsung Galaxy Tab S8 for $749.99, ASUS ZenBook 14 for $999.99, Apple iPhone 14 Pro for $1099, Samsung Galaxy S23 Ultra for $1199, ASUS ROG Phone 6 for $899.99, Apple TV 4K (3rd Generation) for $179, Samsung 65-inch QLED 4K Smart TV for $1499, ASUS ROG Delta S Headset for $199.99, Apple iPad Air for $599, Samsung Galaxy Book3 for $899, ASUS VivoBook 15 for $499.99, Apple AirPods Pro (2nd Generation) for $249.99, Samsung Galaxy Buds2 Pro for $229.99, ASUS ZenFone 9 for $799.99.Please ask for a product you’d like to add to your cart.");
+    </script>
+</body>
+</html>

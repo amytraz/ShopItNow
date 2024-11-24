@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop. - Your One-Stop Electronic Market</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <div class="logo">e-shop.</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Products...">
+                    <button>🔍</button>
+                </div>
+                <div class="user-actions">
+                    <div>🛒 <a href="11.html" id="cartLink">Cart: $0.00</a></div>
+                    <div>👤 <a href="8.php"></a></div>
+                    <button id="colorBlindModeToggle">Color Blind Mode</button>
+                    <button id="voiceAssistantToggle" style="margin-left: 15px;">🎙️ Voice Assistant</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="container-1">
+            <h1>e-shop.</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container-1">
+            <ul>
+                <li><a href="1.html">All Categories</a></li>
+                <li><a href="3.html">Products</a></li>
+                <li><a href="4.html">LIMITED SALE</a></li>
+                <li><a href="5.html">Best Seller</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="hero promo-banner">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Your One-Stop<br>Electronic Market</h1>
+                    <p>Welcome to e-shop, a place where you can buy<br>everything about electronics. Sale every day!</p>
+                    <a href="3.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎧</div>
+                    <h3>Responsive</h3>
+                    <p>Customer service available 24/7</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Secure</h3>
+                    <p>Certified marketplace since 2017</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Shipping</h3>
+                    <p>Free, fast, and reliable worldwide</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Transparent</h3>
+                    <p>Hassle-free return policy</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        window.onload = function() {
+            function speak(text) {
+                if ('speechSynthesis' in window) {
+                    var speech = new SpeechSynthesisUtterance(text);
+                    window.speechSynthesis.speak(speech);
+                } else {
+                    console.log("Text-to-speech not supported by this browser.");
+                }
+            }
+    
+            speak("Welcome to e-shop, your one-stop electronic marketplace!. Discover daily sales on all things electronics. Enjoy 24/7 customer service, secure shopping since 2017, free and fast worldwide shipping, and a hassle-free return policy. Click on 'Shop Now' to browse and buy your favorite electronics.");
+        };
+    </script>    
+    <script src="script.js"></script>
+</body>
+</html>

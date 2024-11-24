@@ -1,0 +1,58 @@
+.hero {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+.hero-text {
+    flex: 1;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.special-edition {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.color-blind-mode .product-price {
+    color: #005f99;
+}
+.color-blind-mode .promo-card,
+.color-blind-mode .hero,
+.color-blind-mode .promo-banner {
+    background-color: #e6f3ff;
+    border: 1px solid #005f99;
+}
+.color-blind-mode .feature-icon {
+    color: #005f99;
+}
+.color-blind-mode a {
+    color: #005f99;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        margin-bottom: 1.5rem;
+    }
+    .special-edition {
+        padding: 1rem;
+    }
+    .special-edition h2 {
+        font-size: 1.5rem;
+    }
+}

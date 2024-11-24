@@ -1,0 +1,82 @@
+main {
+    padding: 20px 0;
+}
+.login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.container-1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.color-blind-mode nav ul li a {
+    color: #ffffff;
+}
+.color-blind-mode .product-price {
+    color: #005f99;
+}
+.color-blind-mode .promo-card,
+.color-blind-mode .hero,
+.color-blind-mode .promo-banner {
+    background-color: #e6f3ff;
+    border: 1px solid #005f99;
+}
+.color-blind-mode .feature-icon {
+    color: #005f99;
+}
+.color-blind-mode .product-card {
+    border: 1px solid #005f99;
+}
+.color-blind-mode .product-category {
+    color: #005f99;
+}
+.color-blind-mode a {
+    color: #005f99;
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group input {
+        width: 100%;
+    }
+    .btn, button {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 1rem auto;
+        text-align: center;
+    }
+}

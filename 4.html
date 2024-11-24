@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-shop. - Your One-Stop Electronic Market</title>
+    <link rel="stylesheet" href="4.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <div class="logo">e-shop.</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Products...">
+                    <button>🔍</button>
+                </div>
+                <div class="user-actions">
+                    <div>🛒 <a href="11.html" id="cartLink">Cart: $0.00</a></div>
+                    <div>👤 <a href="8.php">Admin Account</a></div>
+                    <button id="colorBlindModeToggle">Color Blind Mode</button>
+                    <button id="voiceAssistantToggle" style="margin-left: 15px;">🎙️ Voice Assistant</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="container-1">
+            <h1>e-shop.</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="1.html">All Categories</a></li>
+                <li><a href="3.html">Products</a></li>
+                <li><a href="4.html">LIMITED SALE</a></li>
+                <li><a href="5.html">Best Seller</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container" style="margin-top: 70px;">
+            <section class="special-edition" style="text-align: center;">
+                <h2>Special Limited Edition</h2>
+                <p>Get the best price to our collection:</p>
+                <a href="3.html" class="btn">Shop Now</a>
+            </section>
+            
+            <section class="special-edition" style="text-align: center;">
+                    <h2>Save Big on Selected Items</h2>
+                    <p>Get more discounts as you browse through our new collections</p>
+                    <a href="3.html" class="btn">Shop Now</a>
+            </section>
+        </div>
+    </main>
+    <script>
+        window.onload = function() {
+            function speak(text) {
+                if ('speechSynthesis' in window) {
+                    var speech = new SpeechSynthesisUtterance(text);
+                    window.speechSynthesis.speak(speech);
+                } else {
+                    console.log("Text-to-speech not supported by this browser.");
+                }
+            }
+    
+            speak("Special Limited Edition collection available now. Get the best price on our exclusive items. Save big on selected products, and enjoy even more discounts as you explore our new collections. Click 'Shop Now' to start browsing.");
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
